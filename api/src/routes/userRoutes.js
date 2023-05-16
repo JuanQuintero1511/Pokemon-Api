@@ -2,8 +2,24 @@ const { Router } = require("express");
 
 const userRoutes = Router();
 
+
+
+const pokemon = []
 userRoutes.get ('/pokemons', (req, res) => {
-    res.send('Esto es una prueba');
+    console.log(req.body);
+    let id = 1;
+    const { name, hp, atack, defending, img } = req.body;
+
+    const newPokemon = {
+        id: id++,
+        name,
+        hp,
+        atack,
+        defending, 
+        img
+    }
+    pokemon.push(newPokemon)
+    
 })
 
 userRoutes.get (':idPokemon', (req, res) => {
