@@ -3,7 +3,7 @@ const { getPokemonsHandler, getIdPokemonsHandler, getNamePokemonsHandler } = req
 
 const userRoutes = Router();
 
-userRoutes.get ('/pokemons', getPokemonsHandler);
+userRoutes.get ('/pokemon', getPokemonsHandler);
 
 userRoutes.get ('/:idPokemon', getIdPokemonsHandler);
 

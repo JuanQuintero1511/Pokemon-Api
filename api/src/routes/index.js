@@ -5,8 +5,8 @@ const typeRoutes = require('./typesRoutes.js');
 
 const routes = Router();
 
-routes.use('/pokemons', userRoutes);
-routes.use('/pokemons', postRoutes);
+routes.use('/pokemon', userRoutes);
+routes.use('/pokemon', postRoutes);
 routes.use('/type', typeRoutes);
 
 // Configurar los routers

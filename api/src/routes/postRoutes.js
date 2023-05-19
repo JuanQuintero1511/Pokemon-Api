@@ -3,7 +3,7 @@ const { createPokemon } = require("../Controller/postController");
 
 const postRoutes = Router();
 
-postRoutes.post ('/pokemons', async (req, res) => {
+postRoutes.post ('/pokemon', async (req, res) => {
     try {
         const { name, hp, atack, defending, img } = req.body;
         const newPokemon = await createPokemon(name, hp, atack, defending, img);
