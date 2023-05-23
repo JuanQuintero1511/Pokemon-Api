@@ -10,6 +10,7 @@ const CardsContainer = () => {
             {pokemons.map(pokemon => {
                 console.log(pokemon);
                 return <Card 
+                id = {pokemon[0].id}
                 key = {pokemon[0].id}
                 name = {pokemon[0].name.toUpperCase()}
                 img = {pokemon[0].img}
